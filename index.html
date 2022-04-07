@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="policy">
+        Czy akceptujesz naszą politykę prywatności?
+        <div class="flex flex-row">
+            <form method="POST" action="/cookies">
+                <input name="policyResponse" type="hidden" value="true">
+                <button class="button">Tak</button>
+            </form>
+            <form method="POST" action="/cookies">
+                <input name="policyResponse" type="hidden" value="false">
+                <button class="button">Nie</button>
+            </form>
+        </div>
+        
+    <script defer src="index.js"></script>    
+
+    </div>
+</body>
+</html>
